@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>New Game</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h2>Create Game</h2>
+    
+    <ion-list>
+        <ion-item>
+            <ion-label>Title</ion-label>
+            <ion-input placeholder="Title"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Sport</ion-label>
+            <ion-select [(ngModel)]="Sport" interface="popover">
+                <ion-option value="basketball">Basketball</ion-option>
+                <ion-option value="baseball">Baseball</ion-option>
+                <ion-option value="football">Football</ion-option>
+                <ion-option value="soccer">Soccer</ion-option>
+                <ion-option value="volleyball">Volleyball</ion-option>
+                <ion-option value="squash">Squash</ion-option>
+                <ion-option value="lacrosse">Lacrosse</ion-option>
+                <ion-option value="hockey">Hockey</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Start Date</ion-label>
+            <ion-datetime displayFormat="MMM DD YYYY"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <ion-label>Start Time</ion-label>
+            <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+        </ion-item>
+    </ion-list>
+</ion-content>
+  

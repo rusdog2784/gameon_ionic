@@ -14,3 +14,59 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@font-face {
+    font-family: 'Avenir-Book';
+    src: url('../assets/fonts/AvenirLTStdBook.eot');
+    src: url('../assets/fonts/AvenirLTStdBook.eot') format('embedded-opentype'),
+         url('../assets/fonts/AvenirLTStdBook.woff2') format('woff2'),
+         url('../assets/fonts/AvenirLTStdBook.woff') format('woff'),
+         url('../assets/fonts/AvenirLTStdBook.ttf') format('truetype'),
+         url('../assets/fonts/AvenirLTStdBook.svg#AvenirLTStdBook') format('svg');
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('../assets/fonts/AvenirLTStdLight.eot');
+    src: url('../assets/fonts/AvenirLTStdLight.eot') format('embedded-opentype'),
+         url('../assets/fonts/AvenirLTStdLight.woff2') format('woff2'),
+         url('../assets/fonts/AvenirLTStdLight.woff') format('woff'),
+         url('../assets/fonts/AvenirLTStdLight.ttf') format('truetype'),
+         url('../assets/fonts/AvenirLTStdLight.svg#AvenirLTStdLight') format('svg');
+}
+
+@font-face {
+    font-family: 'Avenir-Bold';
+    src: url('../assets/fonts/AvenirLTStdRoman.eot');
+    src: url('../assets/fonts/AvenirLTStdRoman.eot') format('embedded-opentype'),
+         url('../assets/fonts/AvenirLTStdRoman.woff2') format('woff2'),
+         url('../assets/fonts/AvenirLTStdRoman.woff') format('woff'),
+         url('../assets/fonts/AvenirLTStdRoman.ttf') format('truetype'),
+         url('../assets/fonts/AvenirLTStdRoman.svg#AvenirLTStdRoman') format('svg');
+}
+
+* {
+    font-family: "Avenir-Book";
+}
+
+html {
+    font-size: 14px;
+}
+
+h2 {
+    color: map-get($colors, secondary);
+}
+
+p {
+    color: map-get($colors, textDark);
+}
+
+.toolbar-background {
+    background-color: map-get($colors, primary);
+}
+
+.toolbar-title {
+    font-family: "Avenir-Bold";
+    color: map-get($colors, textLight);
+    font-size: 1.6rem;
+}
