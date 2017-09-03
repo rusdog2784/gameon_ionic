@@ -1,3 +1,54 @@
 page-home {
+    .scroll {
+        height: 100%;
+    }
 
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    .my-location-fab, .profile-fab {
+        top: 10px !important;
+    }
+
+    .create-game-fab, .sports-fab {
+        bottom: 10px !important;
+    }
+
+    #sportslist {
+        position: absolute;
+        z-index: 0;
+        top: 75px;
+        bottom: 75px;
+        left: 80px;
+        right: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #sportslist h2 {
+        text-align: center;
+        margin: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: white;
+    }
+
+    #sportslist ion-list {
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+        overflow-y: scroll;
+    }
+
+    #sportslist ion-item, #sportslist .item-inner {
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: map-get($colors, light2);
+    }
+
+    #sportslist p {
+        text-align: center;
+    }
 }

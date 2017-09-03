@@ -51,13 +51,16 @@
 
 html {
     font-size: 14px;
+    color: map-get($colors, textDark);
 }
 
 h2 {
+    font-size: 1.6rem;
     color: map-get($colors, secondary);
 }
 
 p {
+    font-size: 1.2rem;
     color: map-get($colors, textDark);
 }
 

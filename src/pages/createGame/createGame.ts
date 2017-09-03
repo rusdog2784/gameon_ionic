@@ -6,6 +6,9 @@ import { NavController } from 'ionic-angular';
     templateUrl: 'createGame.html'
 })
 export class CreateGamePage {
+    data:any = {
+        
+    }
 
     constructor(public navCtrl: NavController) {
 

@@ -1,0 +1,23 @@
+page-createGame {
+    .inputs {
+        
+    }
+
+    ion-label {
+        font-size: 1.2rem;
+        color: map-get($colors, primary);
+    }
+
+    .text-input {
+        text-align: right;
+    }
+
+    .inputs input, .inputs ion-select, .inputs ion-datetime {
+        font-size: 1.2rem;
+        color: map-get($colors, secondary);
+    }
+
+    .item-inner {
+        border-color: map-get($colors, light2) !important;
+    }
+}

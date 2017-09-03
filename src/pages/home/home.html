@@ -4,14 +4,27 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <div #map id="map"></div>
+  <ion-fab top left edge class="my-location-fab">
+      <button ion-fab color="primary" (click)="myLocation()"><ion-icon name="navigate"></ion-icon></button>
+  </ion-fab>
+  <ion-fab top right edge class="profile-fab">
+      <button ion-fab color="primary" (click)="goToProfile()"><ion-icon name="person"></ion-icon></button>
+  </ion-fab>
+  <ion-fab bottom left edge class="create-game-fab">
+    <button ion-fab color="primary" (click)="goToCreateGame()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+  <ion-fab bottom right edge class="sports-fab">
+      <button ion-fab color="primary" (click)="toggleSportsList()"><ion-icon name="search"></ion-icon></button>
+  </ion-fab>
+
+  <div #sportslist id="sportslist" *ngIf="listSports">
+    <h2>Available Sports</h2>
+    <ion-list>
+      <ion-item *ngFor="let d of data">
+        <p>{{d["type"]}}</p>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>
